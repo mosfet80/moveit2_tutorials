@@ -31,6 +31,7 @@ repos:
     rev: 24.8.0
     hooks:
       - id: black
+        args: ['--line-length', '100']
 
   - repo: local
     hooks:
