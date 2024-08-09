@@ -278,7 +278,7 @@ public:
     // First, convert from sensor_msgs to pcl::PointXYZRGB which is needed for most of the processing.
     pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZRGB>);
     pcl::fromROSMsg(*input, *cloud);
-    // Using passthough filter to get region of interest. A passthrough filter just eliminates the point cloud values
+    // Using passthrough filter to get region of interest. A passthrough filter just eliminates the point cloud values
     // which do not lie in the user specified range.
     passThroughFilter(cloud);
     // Declare normals and call function to compute point normals.
