@@ -1,6 +1,7 @@
 """
 A launch file that starts a Jupyter notebook server and nodes that support motion planning with the MoveIt Python library.
 """
+
 import os
 import yaml
 from launch import LaunchDescription
